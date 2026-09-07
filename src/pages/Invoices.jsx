@@ -18,7 +18,7 @@ import {
 
 import toast from 'react-hot-toast'
 
-const API_BASE = 'http://localhost:5000/api/invoice'
+const API_BASE = 'https://buyqk-bakend.onrender.com/api/invoice'
 
 export default function Invoices() {
 
@@ -160,7 +160,7 @@ export default function Invoices() {
 
     try {
 
-      const res = await fetch("http://localhost:5000/api/invoice/get", {
+      const res = await fetch("https://buyqk-bakend.onrender.com/api/invoice/get", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -569,7 +569,7 @@ export default function Invoices() {
       if (editingId) {
 
         const res = await fetch(
-          "http://localhost:5000/api/invoice/update",
+          "https://buyqk-bakend.onrender.com/api/invoice/update",
           {
             method: 'POST',
             headers: {
@@ -595,7 +595,7 @@ export default function Invoices() {
       } else {
 
         const res = await fetch(
-          "http://localhost:5000/api/invoice/add",
+          "https://buyqk-bakend.onrender.com/api/invoice/add",
           {
             method: 'POST',
             headers: {
@@ -722,7 +722,7 @@ export default function Invoices() {
     try {
 
       const res = await fetch(
-        "http://localhost:5000/api/invoice/delete",
+        "https://buyqk-bakend.onrender.com/api/invoice/delete",
         {
           method: 'POST',
           headers: {
