@@ -12,7 +12,7 @@ import {
 
 import IncomeChart from '../components/IncomeChart'
 
-const API_BASE = 'http://localhost:5000/api/income'
+const API_BASE = 'https://buyqk-bakend.onrender.com/api/income'
 
 export default function Income() {
   // =====================================================
@@ -301,7 +301,7 @@ export default function Income() {
     try {
 
       const res = await fetch(
-        "http://localhost:5000/api/income/add",
+        "https://buyqk-bakend.onrender.com/api/income/add",
         {
           method: 'POST',
           headers: {
@@ -360,7 +360,7 @@ export default function Income() {
     try {
 
       const res = await fetch(
-        "http://localhost:5000/api/income/delete",
+        "https://buyqk-bakend.onrender.com/api/income/delete",
         {
           method: 'POST',
           headers: {
