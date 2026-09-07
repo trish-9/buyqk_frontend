@@ -1,0 +1,334 @@
+@import "tailwindcss";
+
+/* =========================================
+   BASIC APP STYLES
+========================================= */
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =========================================
+   DARK MODE
+========================================= */
+
+html.app-dark {
+  background: #0f172a;
+}
+
+html.app-dark body {
+  background: #0f172a !important;
+  color: #e2e8f0 !important;
+}
+
+/* =========================================
+   WHITE CARDS
+========================================= */
+
+html.app-dark .bg-white {
+  background-color: #1e293b !important;
+}
+
+/* =========================================
+   LIGHT BACKGROUNDS
+========================================= */
+
+html.app-dark .bg-slate-50 {
+  background-color: #0f172a !important;
+}
+
+html.app-dark .bg-slate-100 {
+  background-color: #1e293b !important;
+}
+
+/* =========================================
+   TEXT COLORS
+========================================= */
+
+html.app-dark .text-slate-900 {
+  color: #f8fafc !important;
+}
+
+html.app-dark .text-slate-800 {
+  color: #f1f5f9 !important;
+}
+
+html.app-dark .text-slate-700 {
+  color: #e2e8f0 !important;
+}
+
+html.app-dark .text-slate-600 {
+  color: #cbd5e1 !important;
+}
+
+html.app-dark .text-slate-500 {
+  color: #94a3b8 !important;
+}
+
+html.app-dark .text-slate-400 {
+  color: #94a3b8 !important;
+}
+
+/* =========================================
+   BORDERS
+========================================= */
+
+html.app-dark .border-slate-200 {
+  border-color: #334155 !important;
+}
+
+html.app-dark .border-slate-100 {
+  border-color: #334155 !important;
+}
+
+/* =========================================
+   INPUTS
+========================================= */
+
+html.app-dark input,
+html.app-dark textarea,
+html.app-dark select {
+  background-color: #1e293b !important;
+  color: #f8fafc !important;
+  border-color: #475569 !important;
+}
+
+html.app-dark input::placeholder,
+html.app-dark textarea::placeholder {
+  color: #94a3b8 !important;
+}
+
+/* =========================================
+   SETTINGS INPUT
+========================================= */
+
+.settings-input {
+  width: 100%;
+  height: 44px;
+  padding: 0 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  outline: none;
+  background: white;
+  color: #0f172a;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.settings-input:focus {
+  border-color: #f97316;
+  box-shadow: 0 0 0 4px rgba(249, 115, 22, 0.1);
+}
+
+/* =========================================
+   SETTINGS LABEL
+========================================= */
+
+.settings-label {
+  display: block;
+  margin-bottom: 8px;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* =========================================
+   SETTINGS MENU
+========================================= */
+
+.settings-menu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  margin-bottom: 2px;
+  border: none;
+  border-radius: 12px;
+  color: #475569;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  text-align: left;
+  cursor: pointer;
+}
+
+.settings-menu:hover {
+  background-color: #f8fafc;
+}
+
+.settings-menu-active {
+  background-color: #fff7ed;
+  color: #ea580c;
+}
+
+/* =========================================
+   SETTINGS PRIMARY BUTTON
+========================================= */
+
+.settings-primary-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  background-color: #f97316;
+  color: white;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.settings-primary-button:hover {
+  background-color: #ea580c;
+}
+
+/* =========================================
+   SETTINGS TOGGLE
+========================================= */
+
+.settings-toggle {
+  width: 56px;
+  height: 28px;
+  padding: 4px;
+  border: none;
+  border-radius: 999px;
+  background-color: #cbd5e1;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.settings-toggle-on {
+  background-color: #f97316;
+}
+
+.settings-toggle-circle {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.settings-toggle-circle-on {
+  transform: translateX(28px);
+}
+
+/* =========================================
+   DARK MODE - SETTINGS MENU
+========================================= */
+
+html.app-dark .settings-menu {
+  color: #cbd5e1;
+}
+
+html.app-dark .settings-menu:hover {
+  background-color: #334155;
+}
+
+html.app-dark .settings-menu-active {
+  background-color: #431f0b;
+  color: #fb923c;
+}
+
+/* =========================================
+   DARK MODE - SETTINGS LABEL
+========================================= */
+
+html.app-dark .settings-label {
+  color: #e2e8f0;
+}
+
+/* =========================================
+   DARK MODE - SETTINGS INPUT
+========================================= */
+
+html.app-dark .settings-input {
+  background-color: #1e293b !important;
+  color: #f8fafc !important;
+  border-color: #475569 !important;
+}
+
+html.app-dark .settings-input:focus {
+  border-color: #f97316 !important;
+  box-shadow: 0 0 0 4px rgba(249, 115, 22, 0.15);
+}
+
+/* =========================================
+   DARK MODE - SETTINGS TOGGLE
+========================================= */
+
+html.app-dark .settings-toggle {
+  background-color: #475569;
+}
+
+html.app-dark .settings-toggle-on {
+  background-color: #f97316;
+}
+
+/* =========================================
+   DARK MODE - HOVER BACKGROUNDS
+========================================= */
+
+html.app-dark .hover\:bg-slate-50:hover {
+  background-color: #334155 !important;
+}
+
+html.app-dark .hover\:bg-slate-100:hover {
+  background-color: #475569 !important;
+}
+
+/* =========================================
+   DASHBOARD SHADOWS
+========================================= */
+
+html.app-dark .shadow-sm {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3) !important;
+}
+
+html.app-dark .shadow-2xl {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* =========================================
+   DARK MODE - TABLES
+========================================= */
+
+html.app-dark table {
+  color: #e2e8f0;
+}
+
+html.app-dark th {
+  color: #cbd5e1;
+}
+
+html.app-dark td {
+  border-color: #334155 !important;
+}
+
+/* =========================================
+   DARK MODE - BUTTONS
+========================================= */
+
+html.app-dark button {
+  transition: all 0.2s ease;
+}
+
+/* =========================================
+   DARK MODE - LINKS
+========================================= */
+
+html.app-dark a {
+  color: inherit;
+}
+
+

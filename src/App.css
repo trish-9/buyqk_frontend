@@ -1,0 +1,45 @@
+#root {
+  min-height: 100vh;
+}
+
+.buyqk-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  box-shadow:
+    0 1px 2px rgba(15, 23, 42, 0.04),
+    0 4px 12px rgba(15, 23, 42, 0.03);
+}
+
+.buyqk-card:hover {
+  box-shadow:
+    0 2px 4px rgba(15, 23, 42, 0.05),
+    0 8px 20px rgba(15, 23, 42, 0.05);
+}
+
+.buyqk-button {
+  background: #f97316;
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.buyqk-button:hover {
+  background: #ea580c;
+  transform: translateY(-1px);
+}
+
+.buyqk-button:active {
+  transform: scale(0.98);
+}
+
+.buyqk-orange-text {
+  color: #f97316;
+}
+
+.buyqk-orange-bg {
+  background: #f97316;
+}
+
+.buyqk-orange-light {
+  background: #fff7ed;
+}
