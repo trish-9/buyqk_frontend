@@ -42,7 +42,7 @@ export default function Login() {
     */
      
     
-    const r1 =  await fetch("http://localhost:5000/api/login", {method : "POST",headers:{'Content-Type': 'application/json'},body: JSON.stringify({email,password})})
+    const r1 =  await fetch("https://buyqk-bakend.onrender.com/api/login", {method : "POST",headers:{'Content-Type': 'application/json'},body: JSON.stringify({email,password})})
     const r = await r1.json()
     console.log(r)
     if(r.login===true)
