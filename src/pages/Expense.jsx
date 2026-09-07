@@ -6,7 +6,7 @@ import {
   X,
 } from 'lucide-react'
 
-const API_BASE = 'http://localhost:5000/api/expense'
+const API_BASE = 'https://buyqk-bakend.onrender.com/api/expense'
 
 export default function Expense() {
   // =====================================================
@@ -47,7 +47,7 @@ export default function Expense() {
 
     try {
      
-      const res = await fetch("http://localhost:5000/api/ex/get", {
+      const res = await fetch("https://buyqk-bakend.onrender.com/api/ex/get", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -160,7 +160,7 @@ export default function Expense() {
     try {
 
       const res = await fetch(
-        "http://localhost:5000/api/ex/add",
+        "https://buyqk-bakend.onrender.com/api/ex/add",
         {
           method: 'POST',
           headers: {
@@ -218,7 +218,7 @@ export default function Expense() {
     try {
 
       const res = await fetch(
-        "http://localhost:5000/api/ex/delete",
+        "https://buyqk-bakend.onrender.com/api/ex/delete",
         {
           method: 'POST',
           headers: {
