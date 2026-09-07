@@ -113,7 +113,7 @@ export default function Signup() {
       )
 
       // Go to dashboard
-      navigate('/dashboard', {
+      navigate('/login', {
         replace: true,
       })
     } catch (err) {
