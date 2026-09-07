@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 import toast from "react-hot-toast";
 
-const API_BASE = "http://localhost:5000/api";
+const API_BASE = "https://buyqk-bakend.onrender.com/api";
 
 /* =========================================================
    NOTE ON BACKEND ROUTES (re-confirmed against the actual
@@ -471,7 +471,7 @@ export default function Purchases() {
     if (!confirmed) return;
 
     try {
-      const response = await fetch("http://localhost:5000/api/purchase/delete", {
+      const response = await fetch("https://buyqk-bakend.onrender.com/api/purchase/delete", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -511,7 +511,7 @@ export default function Purchases() {
     if (!confirmed) return;
 
     try {
-      const response = await fetch("http://localhost:5000/api/purchase/i/delete", {
+      const response = await fetch("https://buyqk-bakend.onrender.com/api/purchase/i/delete", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
