@@ -15,7 +15,7 @@ import {
 
 import toast from 'react-hot-toast'
 
-const API_BASE = 'http://localhost:5000/api/products'
+const API_BASE = 'https://buyqk-bakend.onrender.com/api/products'
 
 export default function Products() {
 
@@ -112,7 +112,7 @@ export default function Products() {
 
     try {
 
-      const res = await fetch("http://localhost:5000/api/product/add/get", {
+      const res = await fetch("https://buyqk-bakend.onrender.com/api/product/add/get", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -573,7 +573,7 @@ export default function Products() {
 
         // EDIT -> alag API, id ke saath
         res = await fetch(
-          "http://localhost:5000/api/product/add/edit",
+          "https://buyqk-bakend.onrender.com/api/product/add/edit",
           {
             method: 'POST',
             headers: {
@@ -593,7 +593,7 @@ export default function Products() {
 
         // ADD -> naya product create karne wali API
         res = await fetch(
-          "http://localhost:5000/api/product/add",
+          "https://buyqk-bakend.onrender.com/api/product/add",
           {
             method: 'POST',
             headers: {
@@ -655,7 +655,7 @@ export default function Products() {
     try {
 
       const res = await fetch(
-        "http://localhost:5000/api/product/add/edit/delete",
+        "https://buyqk-bakend.onrender.com/api/product/add/edit/delete",
         {
           method: 'POST',
           headers: {
@@ -767,7 +767,7 @@ export default function Products() {
     try {
 
       const res = await fetch(
-        "http://localhost:5000/api/product/updatestock",
+        "https://buyqk-bakend.onrender.com/api/product/updatestock",
         {
           method: 'POST',
           headers: {
