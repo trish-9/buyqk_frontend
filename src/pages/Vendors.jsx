@@ -11,7 +11,7 @@ import {
   MapPin,
 } from 'lucide-react'
 
-const API_BASE = 'http://localhost:5000/api/vendor'
+const API_BASE = 'https://buyqk-bakend.onrender.com/api/vendor'
 
 export default function Vendors() {
   // =====================================================
@@ -47,7 +47,7 @@ export default function Vendors() {
     setError('')
 
     try {
-      const res = await fetch("http://localhost:5000/api/ven/get", {
+      const res = await fetch("https://buyqk-bakend.onrender.com/api/ven/get", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -183,7 +183,7 @@ export default function Vendors() {
     setSubmitting(true)
 
     try {
-      const res = await fetch(" http://localhost:5000/api/ven/add", {
+      const res = await fetch("https://buyqk-bakend.onrender.com/api/ven/add", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -231,7 +231,7 @@ export default function Vendors() {
     setSubmitting(true)
 
     try {
-      const res = await fetch("http://localhost:5000/api/vendor/update", {
+      const res = await fetch("https://buyqk-bakend.onrender.com/api/vendor/update", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -296,7 +296,7 @@ export default function Vendors() {
     if (!confirmed) return
 
     try {
-      const res = await fetch("http://localhost:5000/api/vendor/delete", {
+      const res = await fetch("https://buyqk-bakend.onrender.com/api/vendor/delete", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
