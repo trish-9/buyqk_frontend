@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 
-const API_BASE = 'http://localhost:5000/api/add'
+const API_BASE = 'https://buyqk-bakend.onrender.com/api/add'
 const CUSTOMERS_API = `${API_BASE}`
 const em = localStorage.getItem("userEmail");
 console.log(em)
@@ -41,7 +41,7 @@ export default function Customers() {
 
     try {
 
-      const res = await fetch("http://localhost:5000/api/add/get",{
+      const res = await fetch("https://buyqk-bakend.onrender.com/api/add/get",{
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
@@ -181,7 +181,7 @@ export default function Customers() {
 
         // EDIT -> alag API, id ke saath
         res = await fetch(
-          "http://localhost:5000/api/add/edit",
+          "https://buyqk-bakend.onrender.com/api/add/edit",
           {
             method: 'POST',
             headers: {
@@ -247,7 +247,7 @@ export default function Customers() {
     try {
 
       const res = await fetch(
-        "http://localhost:5000/api/add/delete",
+        "https://buyqk-bakend.onrender.com/api/add/delete",
         { method: 'POST' ,
         headers: {
             'Content-Type': 'application/json',
