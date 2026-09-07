@@ -14,7 +14,7 @@ import {
 import toast from "react-hot-toast";
 import { useFinance } from "../context/FinanceContext";
 
-const API_BASE = "http://localhost:5000/api";
+const API_BASE = "https://buyqk-bakend.onrender.com/api";
 
 export default function Orders() {
   // =========================
